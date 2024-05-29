@@ -1,8 +1,17 @@
-def f(arg):
-    print(arg)
+def get_matrix(n, m, value):
+    matrix = []
+    for i in range(n):
+        list_ = []
+        matrix.append(list_)
+        for j in range(m):
+            matrix[i].append(value)
+
+    return matrix
 
 
-f("I believe in miracles")
-f("I believe in miracles")
-f(666)
-f(666)
+result1 = get_matrix(2, 2, 10)
+result2 = get_matrix(3, 5, 42)
+result3 = get_matrix(4, 2, 13)
+print(result1)
+print(result2)
+print(result3)
